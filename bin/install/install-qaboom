@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+COMMITISH="5253d4c88707bc913db072648fb1b048968dc96c"
+REPO_URL="https://github.com/IMAGINARY/qaboom"
+INSTALL_DIR="/opt/qaboom"
+
+"${BASH_SOURCE%/*}/../internal/install-source-from-git" "$COMMITISH" "$REPO_URL" "$INSTALL_DIR"
+
+# Build the project
+cd "$INSTALL_DIR" || exit 1
+corepack enable
+corepack use yarn@4.9
+yarn install
+yarn build
+corepack disable
