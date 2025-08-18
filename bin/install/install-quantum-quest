@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Pull the latest version of the repository
+COMMITISH="421e03362909e1dc6d9808649f7d181956da57f6"
+REPO_URL="https://github.com/IMAGINARY/citizen-quest-quantum-quest.git"
+INSTALL_DIR="/opt/quantum-quest"
+
+"${BASH_SOURCE%/*}/../internal/install-source-from-git" "$COMMITISH" "$REPO_URL" "$INSTALL_DIR"
+
+# Build the project
+cd "$INSTALL_DIR" || exit 1
+npm install
+npm run build
+
+exit $?
