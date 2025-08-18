@@ -1,6 +1,6 @@
-# Autostadt "KI und DU" scripts
+# Quantum Arcade scripts
 
-These scripts are used to install certain interactive stations in the Autostadt exhibition "KI und DU".
+These scripts are used to install certain interactive stations in the Quantum Arcade project.
 
 # Installation
 
@@ -23,7 +23,7 @@ The script `bin/bootstrap-os` will install required packages, the scripts in thi
 well as most of the exhibits:
 
 ```
-wget https://raw.githubusercontent.com/IMAGINARY/autostadt-ki-und-du-scripts/main/bin/bootstrap-os
+wget https://raw.githubusercontent.com/IMAGINARY/quantum-arcade-scripts/main/bin/bootstrap-os
 chmod +x bootstrap-os
 sudo ./bootstrap-os
 ```
