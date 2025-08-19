@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pull the latest version of the repository
-COMMITISH="421e03362909e1dc6d9808649f7d181956da57f6"
+COMMITISH="3aa9635fcccb0b1160f840c0bc7e05cda05656ed"
 REPO_URL="https://github.com/IMAGINARY/citizen-quest-quantum-quest.git"
 INSTALL_DIR="/opt/quantum-quest"
 
