@@ -2,7 +2,7 @@
 
 set -e
 
-COMMITISH="5253d4c88707bc913db072648fb1b048968dc96c"
+COMMITISH="c7f0b0f7c10285cc226fd90e7b53df4eb4f6a157"
 REPO_URL="https://github.com/IMAGINARY/qaboom"
 INSTALL_DIR="/opt/qaboom"
 
